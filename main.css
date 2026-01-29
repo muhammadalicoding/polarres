@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap');
+
+
+.container {
+  max-width: 1200px;
+  width: 100%; 
+}
+
+.navbarlogo {
+  width: 79px;
+}
+
+.navbarlogo img {
+  width: 100%;
+}
+
+.heroimg {
+  max-width: 894px;
+}
+
+.heroimg img {
+  width: 100%;
+}
+
+.delivery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.deliverybox img {
+  max-width:100px ;
+}
+
+.deliverybox {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.deliverybox:hover {
+  background: linear-gradient(135deg,#B0FFFA,#00F7FF);
+  transform: scale(1.1);
+  color: #453131;
+}
