@@ -139,4 +139,12 @@
   .productbtn {
     margin: 20px auto;
   }
+
+  .adelelogoimg {
+    max-width: 300px;
+  }
+
+  .adelelogoimg img {
+    width: 100%;
+  }
 }
