@@ -103,5 +103,40 @@
     font-size: 12px;
   }
 
+  .productmenu ul {
+    display: none;
+  }
+  .insideboxesimg {
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .insideboxesimg img {
+    width: 100%;
+  }
+  .insideboxes {
+    text-align: center;
+    font-family: sans-serif;
+  }
 
+  .insideboxesinfo p {
+    margin: 15px auto;
+    max-width: 350px;
+    font-size: 16px;
+    color: #0F0101;
+    font-family: sans-serif;
+    color: #0F0101;
+    letter-spacing: 1px;
+  }
+
+  .productprice {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+  }
+
+  .productbtn {
+    margin: 20px auto;
+  }
 }
