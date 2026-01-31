@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .container {
   max-width: 1200px;
@@ -39,12 +44,6 @@
   transition: 0.3s;
 }
 
-.deliverybox:hover {
-  background: linear-gradient(135deg,#B0FFFA,#00F7FF);
-  transform: scale(1.1);
-  color: #453131;
-}
-
 .detailstitle {
   margin-top: 50px;
   font-family: sans-serif;
@@ -65,4 +64,55 @@
 
 .detailsimg img{
   width: 100%;
+}
+
+/* 1. Checkboxni ekranda ko'rsatmaymiz */
+#product_menu-check {
+  display: none;
+}
+
+/* 2. Labelni (ya'ni tugmani) chiroyli qilib olamiz (sizning button kodingiz) */
+.menubar label {
+  font-size: 40px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  cursor: pointer; /* Tugma ekanini bildirish uchun */
+  user-select: none;
+}
+
+/* 3. ASOSIY MANTIQ: Checkbox belgilanganida (tugma bosilganda) UL ni yashiramiz */
+#product_menu-check:checked ~ .productmenyu  {
+  display: none;
+}
+
+/* Sizning eski productmenu ul kodingiz o'zgarishsiz qoladi */
+.productmenu .productmenyu {
+  display: flex;
+  right: 0px;
+  /* ... qolgan stillar */
+}
+
+#nav_menyu_check {
+  display: none;
+}
+
+.navmenubar label {
+  font-size: 40px;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  cursor: pointer; /* Tugma ekanini bildirish uchun */
+  user-select: none;
+}
+
+#nav_menyu_check:checked ~ .navmenu {
+  display: none;
+} 
+
+.navmenu {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  color: #002;
 }

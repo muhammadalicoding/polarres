@@ -17,6 +17,10 @@
           <img src="images/headerlogo.png" alt="headerlogo">
           </div>
           <nav>
+            <input type="checkbox" id="nav_menyu_check">
+            <div class="navmenubar">
+              <label for="nav_menyu_check">≡</label>
+            </div>
             <ul class="navmenu">
               <li>Home</li>
               <li>Product</li>
@@ -113,7 +117,15 @@
       <section>
         <div class="ourproduct">
           <div class="productmenu">
-            <ul>
+            <!-- 1. Yashirin checkbox qo'shamiz -->
+            <input type="checkbox" id="product_menu-check">
+          
+            <div class="menubar">
+              <!-- 2. Button o'rniga label ishlatamiz. "for" qismi inputning "id"si bilan bir xil bo'lishi shart -->
+              <label for="product_menu-check">≡</label>
+            </div>
+          
+            <ul class="productmenyu">
               <li>ICE CREAM</li>
               <li>CAYENNE CHOCOLATE</li>
               <li>CAKE BATTER</li>

@@ -8,8 +8,8 @@
 
   .navbarlogo {
     width: 100px;
-
   }
+
 
   .navbarlogo img {
     width: 100%;
@@ -34,7 +34,26 @@
   }
 
   .navmenu {
-    display: none;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    list-style: none;
+    gap: 15px;
+    font-family: "roboto", sans-serif;
+    right: 20px;
+    font-weight: bold;
+  }
+
+  .navmenu  li {
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+
+  .navmenu  li:hover {
+    color: #DC0048;
+    transform: scale(1.08);
   }
 
   .hero_title {
@@ -64,18 +83,24 @@
     width: 300px;
   }
 
+  .heroinfo {
+    margin-top: 50px;
+  }
+
   .heroimg img {
     width: 100%;
   }
 
-  .subtitle {}
+  .subtitle {
+    font-family: "Roboto", sans-serif;
+  }
 
   .hero_title {
     margin: 15px auto;
   }
 
   .delivery {
-    display: block;
+    justify-content: center;
 
   }
 
@@ -104,8 +129,35 @@
   }
 
   .productmenu ul {
-    display: none;
+    display: flex;
+    right: 0px;
+    font-size: 12px;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
   }
+  .menubar {
+    position: relative;
+  }
+  
+ 
+
+ 
+
+  .productmenu ul li {
+    transition: 0.3s;
+    padding: 5px 7px;
+    border-radius: 5px;
+  }
+
+  .productmenu ul li:hover {
+    padding: 5px 7px;
+    background: rgba(0 , 0, 0, 0.2);
+    transform: scale(1.08);
+  }
+  
   .insideboxesimg {
     max-width: 300px;
     margin: auto;
@@ -127,6 +179,7 @@
     font-family: sans-serif;
     color: #0F0101;
     letter-spacing: 1px;
+    text-align: justify;
   }
 
   .productprice {
@@ -146,5 +199,9 @@
 
   .adelelogoimg img {
     width: 100%;
+  }
+
+  .realprice {
+    text-decoration: line-through;
   }
 }
